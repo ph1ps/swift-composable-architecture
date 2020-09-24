@@ -420,7 +420,7 @@ public struct Reducer<State, Action, Environment> {
             fputs(
               """
               ---
-              Warning: Reducer.optional@\(file):\(line))
+              Warning: Reducer.optional@\(file):\(line)
 
               "\(debugCaseOutput(action))" was received by an optional reducer when its state was \
               "nil". This is generally considered an application logic error, and can happen for a \
@@ -505,7 +505,7 @@ public struct Reducer<State, Action, Environment> {
             fputs(
               """
               ---
-              Warning: Reducer.forEach@\(file):\(line))
+              Warning: Reducer.forEach@\(file):\(line)
 
               "\(debugCaseOutput(localAction))" was received by a "forEach" reducer at index \
               \(index) when its state contained no element at this index. This is generally \
@@ -599,7 +599,7 @@ public struct Reducer<State, Action, Environment> {
             fputs(
               """
               ---
-              Warning: Reducer.forEach@\(file):\(line))
+              Warning: Reducer.forEach@\(file):\(line)
 
               "\(debugCaseOutput(localAction))" was received by a "forEach" reducer at id \(id) \
               when its state contained no element at this id. This is generally considered an \
@@ -673,7 +673,7 @@ public struct Reducer<State, Action, Environment> {
             fputs(
               """
               ---
-              Warning: Reducer.forEach@\(file):\(line))
+              Warning: Reducer.forEach@\(file):\(line)
 
               "\(debugCaseOutput(localAction))" was received by a "forEach" reducer at key \(key) \
               when its state contained no element at this key. This is generally considered an \
