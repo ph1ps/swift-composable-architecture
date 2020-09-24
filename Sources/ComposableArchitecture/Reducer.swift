@@ -211,7 +211,7 @@ public struct Reducer<State, Action, Environment> {
     .combine(self, other)
   }
 
-  /// Transforms a reducer that works on local state, action and environment into one that works on
+  /// Transforms a reducer that works on local state, action, and environment into one that works on
   /// global state, action and environment. It accomplishes this by providing 3 transformations to
   /// the method:
   ///
@@ -292,8 +292,8 @@ public struct Reducer<State, Action, Environment> {
   ///
   /// Take care when combining optional reducers into parent domains. An optional reducer cannot
   /// process actions in its domain when its state is `nil`. If a child action is sent to an
-  /// optional reducer when child state is `nil`, it is considered a logic error. There are a few
-  /// ways in which these errors can sneak into a code base:
+  /// optional reducer when child state is `nil`, it is generally considered a logic error. There
+  /// are a few ways in which these errors can sneak into a code base:
   ///
   ///   * A parent reducer sets child state to `nil` when processing a child action and runs
   ///     _before_ the child reducer:
